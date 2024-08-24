@@ -1,0 +1,15 @@
+.tickle1 .tickle2 {
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+    font-size: 28px;
+}
+
+
+.tickle1 {
+    background-color: black;
+    color: white;
+}
+
+
+.tickle2 {
+    background-color: aliceblue;
+}
