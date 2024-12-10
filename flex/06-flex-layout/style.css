@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-  height: 100vh;
+/* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}*/
+
+.body {
+  min-height: 100%;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +24,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +33,62 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul { 
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+/*list-style-type: none;*/
+
+.header a:hover {
+  color: rgb(4, 16, 16);
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 92vh;
+}
+ /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+
+
+/*.footer a {
+  text-decoration: none;
+  color: grey;
+}*/
+
+.footer a:hover {
+  color: rgb(4, 16, 16);
+}
+
+.footer {
+background-color: #eeeeee;
+}
+/*display: flex;
+justify-content: space-between;
+align-items: flex-end;*/
+
+
+
